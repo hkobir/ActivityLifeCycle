@@ -13,8 +13,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 private TextView message;
 private EditText input;
-private final String TAG = MainActivity.class.getSimpleName();
 private Button second,login;
+    private final String TAG = MainActivity.class.getSimpleName();
+    private final String messageKey="Btntext";
+    private final String btnTextKey="messageText";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,5 +85,30 @@ private Button second,login;
     protected void onDestroy() {     //activity is destroyed
         super.onDestroy();
         Log.i(TAG,"onDestroy()");
+    }
+
+
+    //method for solving screen rotation problem  save data before destroy and restore there by restarting activity
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.i(TAG,"onSaveInstanceState()");
+        outState.putString(btnTextKey,login.getText().toString());
+        outState.putString(messageKey,message.getText().toString());
+
+    }
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i(TAG,"onRestoreInstanceState()");
+        if(savedInstanceState!=null){
+            login.setText(savedInstanceState.getString(btnTextKey));
+            message.setText(savedInstanceState.getString(messageKey));
+        }
+
+
     }
 }
