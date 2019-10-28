@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <attr format="reference" name="bottomAppBarStyle"/>
+    <attr format="reference" name="bottomNavigationStyle"/>
+    <attr format="reference" name="bottomSheetDialogTheme"/>
+    <attr format="reference" name="bottomSheetStyle"/>
+    <attr format="reference" name="chipGroupStyle"/>
+    <attr format="reference" name="chipStandaloneStyle"/>
+    <attr format="reference" name="chipStyle"/>
+    <attr format="color" name="colorSecondary"/>
+    <attr name="floatingActionButtonStyle"/>
+    <attr format="reference" name="hideMotionSpec"/>
+    <attr format="reference" name="materialButtonStyle"/>
+    <attr format="reference" name="materialCardViewStyle"/>
+    <attr format="reference" name="navigationViewStyle"/>
+    <attr format="color" name="rippleColor"/>
+    <attr format="color|reference" name="scrimBackground"/>
+    <attr format="reference" name="showMotionSpec"/>
+    <attr format="color" name="strokeColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="reference" name="tabStyle"/>
+    <attr format="reference" name="textAppearanceBody1"/>
+    <attr format="reference" name="textAppearanceBody2"/>
+    <attr format="reference" name="textAppearanceButton"/>
+    <attr format="reference" name="textAppearanceCaption"/>
+    <attr format="reference" name="textAppearanceHeadline1"/>
+    <attr format="reference" name="textAppearanceHeadline2"/>
+    <attr format="reference" name="textAppearanceHeadline3"/>
+    <attr format="reference" name="textAppearanceHeadline4"/>
+    <attr format="reference" name="textAppearanceHeadline5"/>
+    <attr format="reference" name="textAppearanceHeadline6"/>
+    <attr format="reference" name="textAppearanceOverline"/>
+    <attr format="reference" name="textAppearanceSubtitle1"/>
+    <attr format="reference" name="textAppearanceSubtitle2"/>
+    <attr format="reference" name="textInputStyle"/>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <color name="design_bottom_navigation_shadow_color">#14000000</color>
+    <color name="design_default_color_primary">#3F51B5</color>
+    <color name="design_default_color_primary_dark">#303F9F</color>
+    <color name="design_fab_shadow_end_color">@android:color/transparent</color>
+    <color name="design_fab_shadow_mid_color">#14000000</color>
+    <color name="design_fab_shadow_start_color">#44000000</color>
+    <color name="design_fab_stroke_end_inner_color">#0A000000</color>
+    <color name="design_fab_stroke_end_outer_color">#0F000000</color>
+    <color name="design_fab_stroke_top_inner_color">#1AFFFFFF</color>
+    <color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
+    <color name="design_snackbar_background_color">#323232</color>
+    <color name="mtrl_btn_bg_color_disabled">#1F000000</color>
+    <color name="mtrl_btn_text_color_disabled">#61000000</color>
+    <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
+    <color name="mtrl_scrim_color">#52000000</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#6B000000</color>
+    <color name="mtrl_textinput_disabled_color">#1F000000</color>
+    <color name="mtrl_textinput_filled_box_default_background_color">#0A000000</color>
+    <color name="mtrl_textinput_hovered_box_stroke_color">#DE000000</color>
+    <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/><attr name="android:keyboardNavigationCluster"/><attr name="android:touchscreenBlocksFocus"/><attr format="boolean" name="liftOnScroll"/></declare-styleable>
+    <declare-styleable name="AppBarLayoutStates"><attr format="boolean" name="state_collapsed"/><attr format="boolean" name="state_collapsible"/><attr format="boolean" name="state_lifted"/><attr format="boolean" name="state_liftable"/></declare-styleable>
+    <declare-styleable name="AppBarLayout_Layout"><attr name="layout_scrollFlags">
+      
+      <flag name="scroll" value="0x1"/>
+
+      
+      <flag name="exitUntilCollapsed" value="0x2"/>
+
+      
+      <flag name="enterAlways" value="0x4"/>
+
+      
+      <flag name="enterAlwaysCollapsed" value="0x8"/>
+
+      
+      <flag name="snap" value="0x10"/>
+
+      
+      <flag name="snapMargins" value="0x20"/>
+    </attr><attr format="reference" name="layout_scrollInterpolator"/></declare-styleable>
+    <declare-styleable name="BottomAppBar"><attr name="backgroundTint"/><attr name="fabAlignmentMode">
+  
