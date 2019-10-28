@@ -17,6 +17,7 @@
             android:id="@+id/inputET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Your Name"
             />
         <Button
             android:id="@+id/loginBtn"

@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+private TextView message;
+private EditText input;
 private final String TAG = MainActivity.class.getSimpleName();
-private Button second;
+private Button second,login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +22,9 @@ private Button second;
         Log.i(TAG,"onCreate()");
 
         second = findViewById(R.id.secondActivityBtn);
+        login = findViewById(R.id.loginBtn);
+        input = findViewById(R.id.inputET);
+        message = findViewById(R.id.messageTV);
 
         //when go second activity
         second.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +33,17 @@ private Button second;
                 startActivity(new Intent(MainActivity.this,SecondActivity.class));
             }
         });
+
+        //explore screen oriantation problem
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login.setText("Logout");
+                message.setText("Welcome: "+input.getText().toString());
+            }
+        });
+
+
     }
 
     @Override
